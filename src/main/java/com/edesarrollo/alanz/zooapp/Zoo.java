@@ -72,7 +72,80 @@ public class Zoo {
     }
 
     private void crearEntrada(String tipo){
-        //Terminar código
+        switch (tipo){
+            case "1":
+                Cuidador cuidador = new Cuidador();
+                System.out.println("Cuidador:");
+                System.out.println("    DNI:");
+                cuidador.setDni(teclado.nextLine());
+                System.out.println("    Nombre:");
+                cuidador.setNombre(teclado.nextLine());
+                System.out.println("    Apellido:");
+                cuidador.setApellidos(teclado.nextLine());
+                System.out.println("    Nº tfno:");
+                cuidador.setNumTfno(Integer.parseInt(teclado.nextLine()));
+                System.out.println("    Turno:");
+                cuidador.setTurno(teclado.nextLine());
+                System.out.println("    Salario:");
+                cuidador.setSalario(Float.parseFloat(teclado.nextLine()));
+                cuidadores.add(cuidador);
+                System.out.println("Cuidador creado.");
+                break;
+            case "2":
+                Oficinista oficinista = new Oficinista();
+                System.out.println("Oficinista:");
+                System.out.println("    DNI:");
+                oficinista.setDni(teclado.nextLine());
+                System.out.println("    Nombre:");
+                oficinista.setNombre(teclado.nextLine());
+                System.out.println("    Apellido:");
+                oficinista.setApellidos(teclado.nextLine());
+                System.out.println("    Nº tfno:");
+                oficinista.setNumTfno(Integer.parseInt(teclado.nextLine()));
+                System.out.println("    Jornada:");
+                oficinista.setTipoJornada(teclado.nextLine());
+                System.out.println("    Salario:");
+                oficinista.setSalario(Float.parseFloat(teclado.nextLine()));
+                System.out.println("    Departamento:");
+                oficinista.setDepartamento(teclado.nextLine());
+                oficinistas.add(oficinista);
+                System.out.println("Oficinista creado.");
+                break;
+            case "3":
+                Animal animal = new Animal();
+                System.out.println("Animal:");
+                System.out.println("    Nombre:");
+                animal.setNombre(teclado.nextLine());
+                System.out.println("    Especie:");
+                animal.setEspecie(teclado.nextLine());
+                System.out.println("    Sexo:");
+                animal.setSexo(teclado.nextLine());
+                System.out.println("    Edad:");
+                animal.setEdad(Integer.parseInt(teclado.nextLine()));
+                System.out.println("    Peso:");
+                animal.setPeso(Float.parseFloat(teclado.nextLine()));
+                System.out.println("    Recinto:");
+                animal.setRecinto(teclado.nextLine());
+                animales.add(animal);
+                System.out.println("Animal creado.");
+                break;
+            case "4":
+                Recinto recinto = new Recinto();
+                System.out.println("Recinto:");
+                System.out.println("    ID:");
+                recinto.setIdRecinto(teclado.nextLine());
+                System.out.println("    Bioma:");
+                recinto.setBioma(teclado.nextLine());
+                System.out.println("    Capacidad:");
+                recinto.setCapacidadAnimales(Integer.parseInt(teclado.nextLine()));
+                System.out.println("    Area:");
+                recinto.setArea(Double.parseDouble(teclado.nextLine()));
+                System.out.println("    Consumo agua:");
+                recinto.setConsumoAgua(Float.parseFloat(teclado.nextLine()));
+                recintos.add(recinto);
+                System.out.println("Animal creado.");
+                break;
+        }
     }
 
     private void verEntrada(String tipo){
