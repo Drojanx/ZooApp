@@ -149,7 +149,52 @@ public class Zoo {
     }
 
     private void verEntrada(String tipo){
-        //Terminar código
+        String b1;
+        String b2;
+        String b3;
+        switch (tipo){
+            case "1":
+                System.out.println("Introduce DNI del cuidador que busca: ");
+                b1 = teclado.nextLine();
+                for (Cuidador cuidador : cuidadores){
+                    if(cuidador.getDni() != null && cuidador.getDni().contains(b1)){
+                        System.out.println(cuidador);
+                    }
+                }
+                break;
+            case "2":
+                System.out.println("Introduce DNI del oficinista que busca: ");
+                b1 = teclado.nextLine();
+                for (Oficinista oficinista : oficinistas){
+                    if(oficinista.getDni() != null && oficinista.getDni().contains(b1)){
+                        System.out.println(oficinista);
+                    }
+                }
+                break;
+            case "3":
+                System.out.println("Introduce nombre del animal que busca: ");
+                b1 = teclado.nextLine();
+                System.out.println("Introduce especie del animal que busca: ");
+                b2 = teclado.nextLine();
+                System.out.println("Introduce sexo del animal que busca: ");
+                b3 = teclado.nextLine();
+                for (Animal animal : animales){
+                    if(animal.getNombre() != null && animal.getEspecie() != null && animal.getSexo() != null &&
+                            animal.getNombre().contains(b1) && animal.getEspecie().contains(b2) && animal.getSexo().contains(b3)){
+                        System.out.println(animal);
+                    }
+                }
+                break;
+            case "4":
+                System.out.println("Introduce ID del recinto que busca: ");
+                b1 = teclado.nextLine();
+                for (Recinto recinto : recintos){
+                    if(recinto.getIdRecinto() != null && recinto.getIdRecinto().contains(b1)){
+                        System.out.println(recinto);
+                    }
+                }
+                break;
+        }
     }
 }
 
