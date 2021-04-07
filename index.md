@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## El gestor de Zoos del Siglo XXI
 
-You can use the [editor on GitHub](https://github.com/Drojanx/ZooApp/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ZooApp te permite controlar al 100% tu Zoo, permitiendote almacenar información de tus trabajadores, recintos y animales
 
 ### Markdown
 
