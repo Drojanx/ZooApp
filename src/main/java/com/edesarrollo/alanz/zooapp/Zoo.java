@@ -33,7 +33,7 @@ public class Zoo {
                 crearVer = teclado.nextLine();
             }
             String tipo ="";
-            if(!crearVer.equals("x") || !crearVer.equals("X")) {
+            if(!crearVer.equals("x") && !crearVer.equals("X")) {
                 System.out.println("      1.Cuidador");
                 System.out.println("      2.Oficinista");
                 System.out.println("      3.Animal");
@@ -51,7 +51,7 @@ public class Zoo {
                     break;
                 case "2":
                     verEntrada(tipo);
-
+                    break;
                 case "x":
                 case "X":
                     salir();
@@ -82,7 +82,7 @@ public class Zoo {
                 System.out.println("    Salario:");
                 cuidador.setSalario(Float.parseFloat(teclado.nextLine()));
                 cuidadores.add(cuidador);
-                System.out.println("Animal creado.");
+                System.out.println("Cuidador creado.");
                 break;
             case "2":
                 Oficinista oficinista = new Oficinista();
