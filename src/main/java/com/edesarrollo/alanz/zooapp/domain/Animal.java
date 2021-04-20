@@ -15,6 +15,15 @@ public class Animal {
 
     }
 
+    public Animal(String nombre, String especie, String sexo, int edad, float peso, String recinto) {
+        this.nombre = nombre;
+        this.especie = especie;
+        this.sexo = sexo;
+        this.edad = edad;
+        this.peso = peso;
+        this.recinto = recinto;
+    }
+
     public String getNombre() {
         return nombre;
     }

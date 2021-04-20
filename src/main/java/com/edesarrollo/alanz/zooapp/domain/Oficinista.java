@@ -9,6 +9,12 @@ public class Oficinista extends Trabajador{
 
     }
 
+    public Oficinista(String dni, String nombre, String apellidos, int numTfno, float salario, String departamento, String tipoJornada) {
+        super(dni, nombre, apellidos, numTfno, salario);
+        this.departamento = departamento;
+        this.tipoJornada = tipoJornada;
+    }
+
     public String getDepartamento() {
         return departamento;
     }

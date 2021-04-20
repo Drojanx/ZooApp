@@ -14,6 +14,14 @@ public class Recinto {
 
     }
 
+    public Recinto(String idRecinto, String bioma, int capacidadAnimales, double area, double consumoAgua) {
+        this.idRecinto = idRecinto;
+        this.bioma = bioma;
+        this.capacidadAnimales = capacidadAnimales;
+        this.area = area;
+        this.consumoAgua = consumoAgua;
+    }
+
     public String getIdRecinto() {
         return idRecinto;
     }

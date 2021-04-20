@@ -14,6 +14,14 @@ public class Trabajador {
 
     }
 
+    public Trabajador(String dni, String nombre, String apellidos, int numTfno, float salario) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.numTfno = numTfno;
+        this.salario = salario;
+    }
+
     public String getDni() {
         return dni;
     }
