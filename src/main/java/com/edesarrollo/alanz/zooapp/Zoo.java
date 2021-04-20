@@ -7,10 +7,6 @@ import java.util.Scanner;
 
 public class Zoo {
 
-    private Cuidador cuidador;
-    private Oficinista oficinista;
-    private Recinto recinto;
-    private Animal animal;
     private boolean salir;
     private Scanner teclado;
 
@@ -23,10 +19,6 @@ public class Zoo {
     public Zoo(){
         salir = false;
         teclado = new Scanner(System.in);
-        cuidador = new Cuidador();
-        oficinista = new Oficinista();
-        recinto = new Recinto();
-        animal = new Animal();
     }
 
     public void ejecutar(){
@@ -36,12 +28,12 @@ public class Zoo {
             System.out.println("    2.Ver entrada");
             System.out.println("    x.Salir");
             String crearVer = teclado.nextLine();
-            while(!crearVer.equals("1") && !crearVer.equals("2") && !crearVer.equals("x")){
+            while(!crearVer.equals("1") && !crearVer.equals("2") && !crearVer.equals("x") && !crearVer.equals("X")){
                 System.out.println("Debe introducir una opcion de las indicadas: ");
                 crearVer = teclado.nextLine();
             }
             String tipo ="";
-            if(!crearVer.equals("x")) {
+            if(!crearVer.equals("x") || !crearVer.equals("X")) {
                 System.out.println("      1.Cuidador");
                 System.out.println("      2.Oficinista");
                 System.out.println("      3.Animal");
@@ -59,8 +51,9 @@ public class Zoo {
                     break;
                 case "2":
                     verEntrada(tipo);
-                    break;
+
                 case "x":
+                case "X":
                     salir();
                     break;
             }
@@ -89,7 +82,7 @@ public class Zoo {
                 System.out.println("    Salario:");
                 cuidador.setSalario(Float.parseFloat(teclado.nextLine()));
                 cuidadores.add(cuidador);
-                System.out.println("Cuidador creado.");
+                System.out.println("Animal creado.");
                 break;
             case "2":
                 Oficinista oficinista = new Oficinista();
