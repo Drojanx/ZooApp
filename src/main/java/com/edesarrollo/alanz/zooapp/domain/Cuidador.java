@@ -5,18 +5,26 @@ import java.util.Objects;
 
 public class Cuidador extends Trabajador {
 
-    private ArrayList<Recinto> recintosAsignados;
+    private ArrayList<String> recintosAsignados;
     private String turno;
 
     public Cuidador(){
-
     }
 
-    public ArrayList<Recinto> getRecintosAsignados() {
+    public Cuidador(String dni, String nombre, String apellidos, int numTfno, float salario, String turno) {
+        super(dni, nombre, apellidos, numTfno, salario);
+        this.recintosAsignados = recintosAsignados;
+        this.turno = turno;
+    }
+
+
+
+
+    public ArrayList<String> getRecintosAsignados() {
         return recintosAsignados;
     }
 
-    public void setRecintosAsignados(ArrayList<Recinto> recintosAsignados) {
+    public void setRecintosAsignados(ArrayList<String> recintosAsignados) {
         this.recintosAsignados = recintosAsignados;
     }
 
