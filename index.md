@@ -14,7 +14,7 @@ A modo de presentación, este sería el menú principal de la aplicación y lo p
 ```
 Aquí el usuario podrá escribir una de las 3 opciones, bien para ver las demás funcionalidades del programa o bien para cerrarlo.
 
-Por ejemplo, si quisiese dar de alta un cuidador y luego visualizarlo haría lo siguiente (`Esto` es lo introducido por el usuario):
+Por ejemplo, si quisiese dar de alta un cuidador y luego visualizarlo haría lo siguiente (El texto entrecomillado es lo introducido por el usuario):
 
 ```markdown
 `1`
