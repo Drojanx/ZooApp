@@ -2,34 +2,68 @@
 
 ZooApp te permite controlar al 100% tu Zoo, permitiendote almacenar información de tus trabajadores, recintos y animales
 
-### Markdown
+### Adelanto
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+A modo de presentación, este sería el menú principal de la aplicación y lo primero que vería un usuario
 
 ```markdown
-Syntax highlighted code block
+********ZooApp********
+    1.Crear entrada
+    2.Ver entrada
+    x.Salir
+```
+Aquí el usuario podrá escribir una de las 3 opciones, bien para ver las demás funcionalidades del programa o bien para cerrarlo.
 
-# Header 1
-## Header 2
-### Header 3
+Por ejemplo, si quisiese dar de alta un cuidador y luego visualizarlo haría lo siguiente (`Esto` es lo introducido por el usuario):
 
-- Bulleted
-- List
+```markdown
+`1`
+      1.Cuidador
+      2.Oficinista
+      3.Animal
+      4.Recinto
 
-1. Numbered
-2. List
+`1`
+Debe introducir una opcion de las indicadas: 
+Cuidador:
+    DNI:
+`11111111A`
+    Nombre:
+`Ejemplo`
+    Apellido:
+`Example`
+    Nº tfno:
+`976543210`
+    Turno:
+`Mañanas`
+    Salario:
+`1200`
+Cuidador creado.
+********ZooApp********
+    1.Crear entrada
+    2.Ver entrada
+    x.Salir
+`2`
+      1.Cuidador
+      2.Oficinista
+      3.Animal
+      4.Recinto
+`1`
+Introduce DNI del cuidador que busca: 
+`11111111A`
+Cuidador{
+    Nombre:     Ejemplo
+    Apellidos:  Example
+    DNI:        11111111A
+    Turno:      Mañanas
+}
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+********ZooApp********
+    1.Crear entrada
+    2.Ver entrada
+    x.Salir
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+El gitHub del proyecto es el siguiente: (https://github.com/Drojanx/ZooApp/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Drojanx/ZooApp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Alejandro Lanz
