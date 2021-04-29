@@ -58,7 +58,7 @@ public class ZooTest {
         Cuidador cuidador = new Cuidador("22222222Q", "Almudena", "Calava Sierra", 976343434, 1200, "Tarde");
         assertEquals("22222222Q", cuidador.getDni());
         assertEquals("Almudena", cuidador.getNombre());
-        assertEquals(12, cuidador.getApellidos());
+        assertEquals("Calava Sierra", cuidador.getApellidos());
         assertEquals(80.50, cuidador.getNumTfno());
         assertEquals(1200.00, cuidador.getSalario());
         assertEquals("Tarde", cuidador.getTurno());
