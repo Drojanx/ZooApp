@@ -37,7 +37,7 @@ public class ZooTest {
         assertEquals(12, recinto.getCapacidadAnimales());
         assertEquals(80.50, recinto.getArea());
         assertEquals(1200.00, recinto.getConsumoAgua());
-        assertEquals(120, recinto.getCapacidadAnimales());
+        assertEquals(12, recinto.getCapacidadAnimales());
         assertNotEquals("MAL", recinto.getIdRecinto());
         assertEquals(2000, recinto.getBioma());
     }
@@ -62,7 +62,7 @@ public class ZooTest {
         assertEquals(976343434, cuidador.getNumTfno());
         assertEquals(1200.00, cuidador.getSalario());
         assertEquals("Tarde", cuidador.getTurno());
-        assertNotEquals("Tarde", cuidador.getTurno());
+        assertNotEquals(2, cuidador.getTurno());
         assertNotEquals(2000, cuidador.getApellidos());
     }
 
