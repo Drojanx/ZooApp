@@ -34,7 +34,7 @@ public class ZooTest {
         Recinto recinto = new Recinto("1A", "Sabana", 12, 80.50, 1200.00);
         assertEquals("1A", recinto.getIdRecinto());
         assertEquals("Sabana", recinto.getBioma());
-        assertEquals(120, recinto.getCapacidadAnimales());
+        assertEquals(12, recinto.getCapacidadAnimales());
         assertEquals(80.50, recinto.getArea());
         assertEquals(1200.00, recinto.getConsumoAgua());
         assertEquals(120, recinto.getCapacidadAnimales());
@@ -61,7 +61,7 @@ public class ZooTest {
         assertEquals("Calava Sierra", cuidador.getApellidos());
         assertEquals(976343434, cuidador.getNumTfno());
         assertEquals(1200.00, cuidador.getSalario());
-        assertEquals("Tarde", cuidador.getTurno());
+        assertEquals(2, cuidador.getTurno());
         assertNotEquals("Tarde", cuidador.getTurno());
         assertNotEquals(2000, cuidador.getApellidos());
     }
