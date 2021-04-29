@@ -39,7 +39,7 @@ public class ZooTest {
         assertEquals(1200.00, recinto.getConsumoAgua());
         assertEquals(12, recinto.getCapacidadAnimales());
         assertNotEquals("MAL", recinto.getIdRecinto());
-        assertEquals(2000, recinto.getBioma());
+        assertEquals("Sabana", recinto.getBioma());
     }
 
     @Test
