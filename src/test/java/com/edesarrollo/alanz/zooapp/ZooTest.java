@@ -56,13 +56,13 @@ public class ZooTest {
     @Test
     public void testConstructorCuidador(){
         Cuidador cuidador = new Cuidador("22222222Q", "Almudena", "Calava Sierra", 976343434, 1200, "Tarde");
-        assertEquals("1A", cuidador.getDni());
+        assertEquals("22222222Q", cuidador.getDni());
         assertEquals("Sabana", cuidador.getNombre());
         assertEquals(12, cuidador.getApellidos());
         assertEquals(80.50, cuidador.getNumTfno());
         assertEquals(1200.00, cuidador.getSalario());
-        assertEquals(120, cuidador.getTurno());
-        assertNotEquals("MAL", cuidador.getTurno());
+        assertEquals("Tarde", cuidador.getTurno());
+        assertNotEquals("Tarde", cuidador.getTurno());
         assertNotEquals(2000, cuidador.getApellidos());
     }
 
