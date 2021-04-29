@@ -61,7 +61,7 @@ public class ZooTest {
         assertEquals("Calava Sierra", cuidador.getApellidos());
         assertEquals(976343434, cuidador.getNumTfno());
         assertEquals(1200.00, cuidador.getSalario());
-        assertEquals(2, cuidador.getTurno());
+        assertEquals("Tarde", cuidador.getTurno());
         assertNotEquals("Tarde", cuidador.getTurno());
         assertNotEquals(2000, cuidador.getApellidos());
     }
