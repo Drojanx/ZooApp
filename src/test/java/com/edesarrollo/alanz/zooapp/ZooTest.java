@@ -64,6 +64,7 @@ public class ZooTest {
         assertEquals("Tarde", cuidador.getTurno());
         assertNotEquals(2, cuidador.getTurno());
         assertNotEquals(2000, cuidador.getApellidos());
+
     }
 
     @Test
